@@ -12,6 +12,18 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+# css
+Rails.application.config.assets.precompile += %w( lib/bootstrap/css/bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( lib/font-awesome/css/font-awesome.min.css )
+Rails.application.config.assets.precompile += %w( lib/animate/animate.min.css )
+Rails.application.config.assets.precompile += %w( lib/ionicons/css/ionicons.min.css )
+Rails.application.config.assets.precompile += %w( lib/owlcarousel/assets/owl.carousel.min.css )
+Rails.application.config.assets.precompile += %w( lib/lightbox/css/lightbox.min.css )
+Rails.application.config.assets.precompile += %w( css/style.css )
+
+
+# js
 Rails.application.config.assets.precompile += %w( lib/jquery/jquery.min.js )
 Rails.application.config.assets.precompile += %w( lib/jquery/jquery-migrate.min.js )
 Rails.application.config.assets.precompile += %w( lib/bootstrap/js/bootstrap.bundle.min.js )
