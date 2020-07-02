@@ -7,22 +7,9 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet" type="text/css">
-
-  <!-- Bootstrap CSS File -->
-  <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
-  <!-- Libraries CSS Files -->
-  <%= stylesheet_link_tag "lib/font-awesome/css/font-awesome.min.css" %>
-  <%= stylesheet_link_tag "lib/animate/animate.min.css" %>
-  <%= stylesheet_link_tag "lib/ionicons/css/ionicons.min.css" %>
-  <%= stylesheet_link_tag "lib/owlcarousel/assets/owl.carousel.min.css" %>
-  <%= stylesheet_link_tag "lib/lightbox/css/lightbox.min.css" %>
-
-  <!-- Main Stylesheet File -->
-  <%= stylesheet_link_tag "css/style.css" %>
  
+ 
+  
 </head>
 
 <body>
@@ -41,11 +28,11 @@ Header
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#intro">Home</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li class="active"><a href="#intro">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Technologies</a></li>
+        <li><a href="#team">technologies</a></li>
         <!-- <li class="drop-down"><a href="">Drop Down</a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
@@ -63,7 +50,10 @@ Header
             <li><a href="#">Drop Down 5</a></li>
           </ul>
         </li>  -->
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Nous contacter &emsp; |</a></li>
+        
+        <li><a href="#contact">FR</a></li>
+        <li><a href="<%= welcome_anglais_path %>">ENG</a></li>
       </ul>
     </nav><!-- .main-nav -->
 
@@ -80,11 +70,13 @@ Header
       <%= image_tag ("img/undraw_design_notes_8dmv.svg"), class: "img-fluid"%>
     </div>
 
+
+
     <div class="intro-info">
-      <h2>We provide<br><span>SOLUTIONS</span><br>for your business!</h2>
+      <h2>Nous fournissons<br><span>SOLUTIONS</span><br>pour votre entreprise!</h2>
       <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#services" class="btn-services scrollto">Our Services</a>
+        <a href="#about" class="btn-get-started scrollto">Commencer</a>
+        <a href="#services" class="btn-services scrollto">Nos services</a>
       </div>
     </div>
 
@@ -181,54 +173,54 @@ Header
     <div class="container">
 
       <header class="section-header">
-        <h3>Services</h3>
-        <p>Helping business accelerate their journey to become cognitive enterprises.</p>
+        <h3>Nos Services</h3>
+        <p>Aider les entreprises à accélérer leur parcours pour devenir des entreprises cognitives.</p>
       </header>
 
       <div class="row">
 
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-            <h4 class="title"><a href="">Web Application Development</a></h4>
-            <p class="description">Web application development is the creation of application programs that reside on remote servers and are delivered to the user's device over the Internet</p>
+            <h4 class="title"><a href="">Développement d'applications Web</a></h4>
+            <p class="description">Le développement d'applications Web est la création de programmes d'application qui résident sur des serveurs distants et sont livrés à l'appareil de l'utilisateur via Internet</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-            <h4 class="title"><a href="">Custom Website Development</a></h4>
-            <p class="description">Our web development team loves to be challenged and has vast experience building customized solutions and plugins to meet client needs</p>
+            <h4 class="title"><a href="">Développement de site Web personnalisé</a></h4>
+            <p class="description">Notre équipe de développement Web aime relever des défis et possède une vaste expérience dans la création de solutions et de plugins personnalisés pour répondre aux besoins des clients</p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-            <h4 class="title"><a href="">Business Website Development</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur  quelque chose</p>
+            <h4 class="title"><a href="">Développement de site Web d'entreprise</a></h4>
+            <p class="description">Créez un site Web pour votre entreprise afin que vous puissiez stimuler votre entreprise en choisissant un modèle qui répond à vos besoins</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-            <h4 class="title"><a href="">UI/UX Design</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h4 class="title"><a href="">Conception UI / UX</a></h4>
+            <p class="description">Amélioration de l'interface en anticipant ce que les utilisateurs pourraient avoir à faire et en garantissant un accès facile aux éléments</p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
-            <h4 class="title"><a href="">Maintenance & Support</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <h4 class="title"><a href="">Maintenance et Assistance</a></h4>
+            <p class="description">Pour une meilleure gestion des équipements des technologies de l'information et des communications pour les logiciels</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
           <div class="box">
             <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
-            <h4 class="title"><a href="">Ecommerce Development</a></h4>
-            <p class="description">Our dedicated ecommerce web developers experts can ensure that your site performs,have ecommerce features, offering scalability and integration solutions</p>
+            <h4 class="title"><a href="">Développement du commerce électronique</a></h4>
+            <p class="description">Nos experts dédiés aux développeurs de sites Web de commerce électronique peuvent s'assurer que votre site fonctionne, possède des fonctionnalités de commerce électronique, offrant des solutions d'évolutivité et d'intégration</p>
           </div>
         </div>
 
@@ -243,8 +235,8 @@ Header
   <section id="why-us" class="wow fadeIn">
     <div class="container">
       <header class="section-header">
-        <h3>Why choose us?</h3>
-        <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        <h3>Pourquoi nous choisir?</h3>
+        <p>Nous sommes les meilleurs.</p>
       </header>
 <!--
       <div class="row row-eq-height justify-content-center">
@@ -312,13 +304,13 @@ Header
   </section>
 
   <!--==========================
-    Portfolio Section
+    Portfolio Section  
   ============================-->
-  <section id="portfolio" class="clearfix">
+ <section id="portfolio" class="clearfix">
     <div class="container">
 
       <header class="section-header">
-        <h3 class="section-title">Our Portfolio</h3>
+        <h3 class="section-title">Notre Portfolio</h3>
       </header>
 
       <div class="row">
@@ -338,11 +330,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/01.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 1</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 1</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../01.png" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -350,13 +342,13 @@ Header
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
           <div class="portfolio-wrap">
-            <%= image_tag ("img/portfolio/web3.jpg"), class: "img-fluid"%>
+            <%= image_tag ("img/portfolio/a1.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Web 3</a></h4>
-              <p>Web</p>
+              <h4><a href="#">STARTUP 1</a></h4>
+              <p>STARTUP</p>
               <div>
-                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="../a1.png" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -366,11 +358,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/02.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 2</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 2</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../02.png" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -380,11 +372,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/a.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Card 2</a></h4>
-              <p>Card</p>
+              <h4><a href="#">SIG 1</a></h4>
+              <p>SIG</p>
               <div>
                 <a href="../a.png" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -394,11 +386,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/b.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Card 2</a></h4>
-              <p>Web</p>
+              <h4><a href="#">SIG 2</a></h4>
+              <p>SIG</p>
               <div>
                 <a href="../b.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -408,11 +400,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/03.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 3</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../03.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -422,11 +414,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/04.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 4</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../04.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -436,11 +428,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/05.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 5</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../05.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -450,11 +442,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/06.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 6</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../06.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -464,11 +456,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/07.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 7</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../07.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -478,11 +470,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/08.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 8</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../08.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -492,11 +484,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/09.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 9</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../09.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -506,11 +498,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/010.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 10</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../010.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -520,11 +512,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/011.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
+              <h4><a href="#">Ecommerce 11</a></h4>
+              <p>Ecommerce</p>
               <div>
                 <a href="../011.png" class="link-preview" data-lightbox="portfolio" data-title="App 011" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -534,11 +526,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/c.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">SIG </a></h4>
+              <h4><a href="#">SIG 3</a></h4>
               <p>SIG</p>
               <div>
                 <a href="../c.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -548,11 +540,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/d.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Card 3</a></h4>
-              <p>Card</p>
+              <h4><a href="#">SIG 4</a></h4>
+              <p>SIG</p>
               <div>
                 <a href="../d.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -562,11 +554,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/e.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Card 3</a></h4>
-              <p>Card</p>
+              <h4><a href="#">SIG 5</a></h4>
+              <p>SIG</p>
               <div>
                 <a href="../e.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -576,11 +568,11 @@ Header
           <div class="portfolio-wrap">
             <%= image_tag ("img/portfolio/f.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Card 3</a></h4>
-              <p>Card</p>
+              <h4><a href="#">SIG 6</a></h4>
+              <p>SIG</p>
               <div>
                 <a href="../f.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -588,13 +580,69 @@ Header
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
           <div class="portfolio-wrap">
-            <%= image_tag ("img/portfolio/web1.jpg"), class: "img-fluid"%>
+            <%= image_tag ("img/portfolio/a2.png"), class: "img-fluid"%>
             <div class="portfolio-info">
-              <h4><a href="#">Web 1</a></h4>
-              <p>Web</p>
+              <h4><a href="#">STARTUP 2</a></h4>
+              <p>STARTUP</p>
               <div>
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="../a2.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a3.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 3</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a3.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a4.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 4</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a4.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a5.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 5</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a5.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a6.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 6</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a6.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
               </div>
             </div>
           </div>
@@ -612,7 +660,7 @@ Header
     <div class="container">
 
       <header class="section-header">
-        <h3>Quotes</h3>
+        <h3>Citations</h3>
       </header>
 
       <div class="row justify-content-center">
@@ -766,8 +814,8 @@ Header
     <div class="container">
 
       <div class="section-header">
-        <h3>Our Technologies</h3>
-        <p>Set of technologies that we are perfectly familiar with to make sure you will have the best services possible.</p>
+        <h3>Nos technologies</h3>
+        <p>Ensemble de technologies que nous connaissons parfaitement pour vous assurer d'avoir les meilleurs services possibles.</p>
       </div>
 
       <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
@@ -880,7 +928,7 @@ Header
     <div class="container-fluid">
 
       <div class="section-header">
-        <h3>Contact Us</h3>
+        <h3>Nous contacter</h3>
       </div>
 
       <div class="row wow fadeInUp">
@@ -907,16 +955,16 @@ Header
           </div>
 
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="sendmessage">Votre message a été envoyé. Je vous remercie!</div>
             <div id="errormessage"></div>
             <form action="https://formspree.io/xpzylrpo" method="post" role="form" class="contactForm">
               <div class="form-row">
                 <div class="form-group col-lg-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
               </div>
@@ -928,7 +976,7 @@ Header
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message">Send Message</button></div>
+              <div class="text-center"><button type="submit" title="Send Message">Envoyer le message</button></div>
             </form>
           </div>
         </div>
@@ -998,7 +1046,7 @@ Header
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong>Elite Soft</strong>. All Rights Reserved
+      &copy; Droits d'auteur <strong>Elite Soft</strong>. Tous les droits sont réservés
     </div>
     <div class="credits">
       <!--
@@ -1007,7 +1055,7 @@ Header
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
       -->
-      Designed by <a href="https://bootstrapmade.com/">Bouafia Khaled</a>
+      Conçu par <a href="https://bootstrapmade.com/">Bouafia Khaled</a>
     </div>
   </div>
 </footer><!-- #footer -->
@@ -1018,34 +1066,8 @@ Header
 
 
 
-<!-- JavaScript Libraries -->
-<%= javascript_include_tag('lib/jquery/jquery.min.js') %>
-<%= javascript_include_tag('lib/jquery/jquery-migrate.min.js') %>
-<%= javascript_include_tag('lib/bootstrap/js/bootstrap.bundle.min.js') %>
-<%= javascript_include_tag('lib/easing/easing.min.js') %>
-<%= javascript_include_tag('lib/mobile-nav/mobile-nav.js') %>
-<%= javascript_include_tag('lib/wow/wow.min.js') %>
-<%= javascript_include_tag('lib/waypoints/waypoints.min.js') %>
-<%= javascript_include_tag('lib/counterup/counterup.min.js') %>
-<%= javascript_include_tag('lib/owlcarousel/owl.carousel.min.js') %>
-<%= javascript_include_tag('lib/isotope/isotope.pkgd.min.js') %>
-<%= javascript_include_tag('lib/lightbox/js/lightbox.min.js') %>
-<!-- Contact Form JavaScript File -->
-<%= javascript_include_tag('contactform/contactform.js') %>
 
-<!-- Template Main Javascript File -->
-<%= javascript_include_tag('js/main.js') %>
 
-<script>
-  var map = L.map('map',{
-      center: [36.1700, 5.5199],
-      zoom: 12,
-      fullscreenControl: true
-      
-  });
-  var tileUrl = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-</script>
+
 </body>
 </html>

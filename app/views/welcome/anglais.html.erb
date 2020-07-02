@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NewBiz Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  
+  
+ 
+</head>
+
+<body>
+
+<!--==========================
+Header
+============================-->
+<header id="header" class="fixed-top">
+  <div class="container">
+
+    <div class="logo float-left">
+      <!-- Uncomment below if you prefer to use an image logo 
+      <h1 class="text-light"><a href="#header"><span>Elite Softwear</span></a></h1> -->
+      <a href="#intro" class="scrollto"><%= image_tag ("img/logo1.png"), class: "img-fluid"%></a>
+    </div>
+
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#intro">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Technologies</a></li>
+        <!-- <li class="drop-down"><a href="">Drop Down</a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="drop-down"><a href="#">Drop Down 2</a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+            <li><a href="#">Drop Down 5</a></li>
+          </ul>
+        </li>  -->
+        <li><a href="#contact">Contact Us &emsp; |</a></li>
+        
+        <li><a href="<%= welcome_francais_path %>">FR</a></li>
+        <li><a href="#contact">ENG</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+
+  </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro" class="clearfix">
+  <div class="container">
+
+    <div class="intro-img">
+      <%= image_tag ("img/undraw_design_notes_8dmv.svg"), class: "img-fluid"%>
+    </div>
+
+    <div class="intro-info">
+      <h2>We provide<br><span>SOLUTIONS</span><br>for your business!</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#services" class="btn-services scrollto">Our Services</a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- #intro -->
+
+<main id="main">
+
+  <!--==========================
+    About Us Section
+  ============================-->
+  <section id="about">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>About Us</h3>
+        <p>Help organizations create new customer experiences, improve operational efficiencies and ensure IT delivers.</p>
+      </header>
+
+      <div class="row about-container">
+
+        <div class="col-lg-6 content order-lg-1 order-2">
+          <p>
+          Elite Soft is a startup for freelance full stack web development,.
+          </p>
+
+          <div class="icon-box wow fadeInUp">
+            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+            <h4 class="title"><a href="">Front End development</a></h4>
+            <p class="description">Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.</p>
+          </div>
+
+          <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+            <div class="icon"><i class="fa fa-photo"></i></div>
+            <h4 class="title"><a href="">Back End development</a></h4>
+            <p class="description">Back-end development is the skill that powers the web. Backend development languages handle the 'behind-the-scenes' functionality of web applications. It's code that connects the web to a database, manages user connections, and powers the web application itself.</p>
+          </div>
+
+          <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+            <div class="icon"><i class="fa fa-bar-chart"></i></div>
+            <h4 class="title"><a href="">DevOps</a></h4>
+            <p class="description">DevOps is a set of practices that combines software development and information-technology operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+          <%= image_tag ("img/about-img.svg"), class: "img-fluid"%>
+        </div>
+      </div>
+
+      <div class="row about-extra">
+        <div class="col-lg-6 wow fadeInUp">
+          <%= image_tag ("img/about-extra-1.svg"), class: "img-fluid"%>
+        </div>
+        <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+          <h4>EXPERIENCE.</h4>
+          <p>
+            Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+          </p>
+          <p>
+            Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+          </p>
+        </div>
+      </div>
+
+      <div class="row about-extra">
+        <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+          <%= image_tag ("img/about-extra-2.svg"), class: "img-fluid"%>
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+          <h4>PHILOSOPHY.</h4>
+          <p>
+          SARL FlamboSoft est une Société de Services et d’Ingénierie en Informatique, fondée en 2013. FLAMBOSOFT est Formé d’une équipe pluridisciplinaire.
+          </p>
+          <p>
+          englobant une multitude de compétences dans les domaines de l’informatique, automatisme, sécurité numérique, et encore le marketing numérique.
+          </p>
+          <p>
+            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #about -->
+
+  <!--==========================
+    Services Section
+  ============================-->
+  <section id="services" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>Services</h3>
+        <p>Helping business accelerate their journey to become cognitive enterprises.</p>
+      </header>
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+            <h4 class="title"><a href="">Web Application Development</a></h4>
+            <p class="description">Web application development is the creation of application programs that reside on remote servers and are delivered to the user's device over the Internet</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+            <h4 class="title"><a href="">Custom Website Development</a></h4>
+            <p class="description">Our web development team loves to be challenged and has vast experience building customized solutions and plugins to meet client needs</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+            <h4 class="title"><a href="">Business Website Development</a></h4>
+            <p class="description">Build a website for your company so you can boost your Business by choosing a template that feet your needs</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+            <h4 class="title"><a href="">UI/UX Design</a></h4>
+            <p class="description">Improvement of the interface by anticipate what users might need to do and ensures that elements are easy to access</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
+            <h4 class="title"><a href="">Maintenance & Support</a></h4>
+            <p class="description">For better management of information and communications technology equipment for software</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+          <div class="box">
+            <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
+            <h4 class="title"><a href="">Ecommerce Development</a></h4>
+            <p class="description">Our dedicated ecommerce web developers experts can ensure that your site performs,have ecommerce features, offering scalability and integration solutions</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #services -->
+
+  <!--==========================
+    Why Us Section
+  ============================-->
+  <section id="why-us" class="wow fadeIn">
+    <div class="container">
+      <header class="section-header">
+        <h3>Why choose us?</h3>
+        <p>We are the best.</p>
+      </header>
+<!--
+      <div class="row row-eq-height justify-content-center">
+
+        <div class="col-lg-4 mb-4">
+          <div class="card wow bounceInUp">
+            <i class="fa fa-diamond"></i>
+            <div class="card-body">
+              <h5 class="card-title">Corporis dolorem</h5>
+              <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+              <a href="#" class="readmore">Read more </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card wow bounceInUp">
+            <i class="fa fa-language"></i>
+            <div class="card-body">
+              <h5 class="card-title">Voluptates dolores</h5>
+              <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+              <a href="#" class="readmore">Read more </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card wow bounceInUp">
+            <i class="fa fa-object-group"></i>
+            <div class="card-body">
+              <h5 class="card-title">Eum ut aspernatur</h5>
+              <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
+              <a href="#" class="readmore">Read more </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+-->
+      <div class="row counters">
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">274</span>
+          <p>Clients</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">421</span>
+          <p>Projects</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">1,364</span>
+          <p>Hours Of Support</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">18</span>
+          <p>Hard Workers</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--==========================
+    Portfolio Section
+  ============================-->
+  <section id="portfolio" class="clearfix">
+    <div class="container">
+
+      <header class="section-header">
+        <h3 class="section-title">Our Portfolio</h3>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">ECOMMERCE</li>
+            <li data-filter=".filter-card">SIG</li>
+            <li data-filter=".filter-web">STARTUP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/01.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 1</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../01.png" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a1.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 1</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a1.png" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/02.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 2</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../02.png" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 1</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../a.png" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/b.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 2</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../b.png" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/03.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 3</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../03.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/04.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 4</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../04.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/05.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 5</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../05.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/06.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 6</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../06.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/07.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 7</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../07.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/08.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 8</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../08.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/09.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 9</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../09.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/010.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 10</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../010.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/011.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">Ecommerce 11</a></h4>
+              <p>Ecommerce</p>
+              <div>
+                <a href="../011.png" class="link-preview" data-lightbox="portfolio" data-title="App 011" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/c.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 3</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../c.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/d.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 4</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../d.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/e.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 5</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../e.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/f.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">SIG 6</a></h4>
+              <p>SIG</p>
+              <div>
+                <a href="../f.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a2.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 2</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a2.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a3.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 3</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a3.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a4.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 4</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a4.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a5.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 5</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a5.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <%= image_tag ("img/portfolio/a6.png"), class: "img-fluid"%>
+            <div class="portfolio-info">
+              <h4><a href="#">STARTUP 6</a></h4>
+              <p>STARTUP</p>
+              <div>
+                <a href="../a6.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <!--<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--==========================
+    Clients Section
+  ============================-->
+  <section id="testimonials" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>Quotes</h3>
+      </header>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+
+          <div class="owl-carousel testimonials-carousel wow fadeInUp">
+
+            <div class="testimonial-item">
+              <h3>Steve Jobs</h3>
+              <h4>Ceo &amp; Founder of Apple</h4>
+              <p>
+                You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out.
+              </p>
+            </div>
+
+            <div class="testimonial-item">
+              <h3>Bill Gates</h3>
+              <h4>Ceo &amp; Founder of Microsoft</h4>
+              <p>
+                Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself.
+              </p>
+            </div>
+
+            <div class="testimonial-item">
+              <h3>Tony Hsieh</h3>
+              <h4>CEO of Zappos</h4>
+              <p>
+                Stop chasing the money and start chasing the passion.
+              </p>
+            </div>
+
+            <div class="testimonial-item">
+              <h3>Jack Ma</h3>
+              <h4>Co-founder and former executive chairman of Alibaba Group</h4>
+              <p>
+                No matter how tough the chase is, you should always have the dream you saw on the first day. It’ll keep you motivated and rescue you (from any weak thoughts).
+              </p>
+            </div>
+
+            <div class="testimonial-item">
+              <h3>Elon Musk</h3>
+              <h4>Founder, CEO, Lead Designer of SpaceX</h4>
+              <p>
+                When something is important enough, you do it even if the odds are not in your favor.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section><!-- #testimonials -->
+
+  <!--==========================
+    Team Section
+  ============================-->
+  <section id="team">
+    <div class="container">
+      <div class="section-header">
+      <!--<h3>Team</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>  -->
+      </div>  
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <%= image_tag ("img/team-p4.png"), class: "img-fluid"%>
+            <div class="member-info">
+              <div class="member-info-content">
+                <!--<h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="member">
+            <%= image_tag ("img/team-p3.png"), class: "img-fluid"%>
+            <div class="member-info">
+              <div class="member-info-content">
+                <!--<h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="member">
+            <%= image_tag ("img/team-p5.png"), class: "img-fluid"%>
+            <div class="member-info">
+              <div class="member-info-content">
+                <!--<h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="member">
+            <%= image_tag ("img/team-p2.png"), class: "img-fluid"%>
+            <div class="member-info">
+              <div class="member-info-content">
+                <!--<h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                  <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #team -->
+
+  <!--==========================
+    Clients Section
+  ============================-->
+  <section id="clients" class="section-bg">
+
+    <div class="container">
+
+      <div class="section-header">
+        <h3>Our Technologies</h3>
+        <p>Set of technologies that we are perfectly familiar with to make sure you will have the best services possible.</p>
+      </div>
+
+      <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/16.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/1.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/3.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/ap.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/5.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/9.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/12.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/13.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/8.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/17.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/7.webp"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/10.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/31.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/51.png"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/62.jpg"), class: "img-fluid"%>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <%= image_tag ("img/42.png"), class: "img-fluid"%>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container-fluid">
+
+      <div class="section-header">
+        <h3>Contact Us</h3>
+      </div>
+
+      <div class="row wow fadeInUp">
+
+        <div class="col-lg-6">
+          <div class="map mb-4 mb-lg-0" >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7679.491781824357!2d5.438146650808376!3d36.20668047768116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbg!4v1592563618870!5m2!1sen!2sbg" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-5 info">
+              <i class="ion-ios-location-outline"></i>
+              <p>CITE HACHEMI NOUV 221 LOTS N° 217 A.P.C DE SETIF</p>
+            </div>
+            <div class="col-md-4 info">
+              <i class="ion-ios-email-outline"></i>
+              <p>khaledsetif1900@gmail.com</p>
+            </div>
+            <div class="col-md-3 info">
+              <i class="ion-ios-telephone-outline"></i>
+              <p>+213 662 24 44 35</p>
+            </div>
+          </div>
+
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="https://formspree.io/xpzylrpo" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="message" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <!--<div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+         <div class="col-lg-4 col-md-6 footer-info">
+          <h3>Bouafia Khaled</h3>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            CITE HACHEMI NOUV 221 <br>
+            LOTS N° 217 A.P.C DE SETIF<br>
+            ALGERIA <br>
+            <strong>Phone:</strong> +213 662 24 44 35<br>
+            <strong>Email:</strong> khaledsetif1900@gmail.com<br>
+          </p>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/khaled.bouafia.50" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.linkedin.com/in/khaled-bouafia-7b67aa184" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit"  value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>  -->
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong>Elite Soft</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+      -->
+      Designed by <a href="https://bootstrapmade.com/">Bouafia Khaled</a>
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+
+
+
+
+
+</body>
+</html>

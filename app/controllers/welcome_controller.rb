@@ -1,4 +1,8 @@
 class WelcomeController < ApplicationController
-  def index
+  def anglais
   end
+
+  def francais
+  end
+
 end

@@ -7,9 +7,44 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS File -->
+  <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
+  <!-- Libraries CSS Files -->
+  <%= stylesheet_link_tag "lib/font-awesome/css/font-awesome.min.css" %>
+  <%= stylesheet_link_tag "lib/animate/animate.min.css" %>
+  <%= stylesheet_link_tag "lib/ionicons/css/ionicons.min.css" %>
+  <%= stylesheet_link_tag "lib/owlcarousel/assets/owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "lib/lightbox/css/lightbox.min.css" %>
+
+  <!-- Main Stylesheet File -->
+  <%= stylesheet_link_tag "css/style.css" %>
   </head>
 
   <body>
     <%= yield %>
+
+    <!-- JavaScript Libraries -->
+<%= javascript_include_tag('lib/jquery/jquery.min.js') %>
+<%= javascript_include_tag('lib/jquery/jquery-migrate.min.js') %>
+<%= javascript_include_tag('lib/bootstrap/js/bootstrap.bundle.min.js') %>
+<%= javascript_include_tag('lib/easing/easing.min.js') %>
+<%= javascript_include_tag('lib/mobile-nav/mobile-nav.js') %>
+<%= javascript_include_tag('lib/wow/wow.min.js') %>
+<%= javascript_include_tag('lib/waypoints/waypoints.min.js') %>
+<%= javascript_include_tag('lib/counterup/counterup.min.js') %>
+<%= javascript_include_tag('lib/owlcarousel/owl.carousel.min.js') %>
+<%= javascript_include_tag('lib/isotope/isotope.pkgd.min.js') %>
+<%= javascript_include_tag('lib/lightbox/js/lightbox.min.js') %>
+<!-- Contact Form JavaScript File -->
+<%= javascript_include_tag('contactform/contactform.js') %>
+
+<!-- Template Main Javascript File -->
+<%= javascript_include_tag('js/main.js') %>
+
   </body>
 </html>
