@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   
   root 'welcome#anglais'
   resources :welcomes
-  get 'welcome/francais'
-  get 'welcome/anglais'
+  get 'francais', to: 'welcome#francais'
+  get 'anglais', to: 'welcome#anglais'
+  
 
 end
