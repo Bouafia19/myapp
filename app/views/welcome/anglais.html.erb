@@ -1075,7 +1075,7 @@ Header
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="https://formspree.io/xpzylrpo" method="post" role="form" class="contactForm">
+            <form action="https://formspree.io/f/xknqewla" method="post" role="form" class="contactForm">
               <div class="form-row">
                 <div class="form-group col-lg-6">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -1096,7 +1096,7 @@ Header
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6Lcp_jMcAAAAAI6Or4j6PjHmlLrD5yIvJJlCZfzW"></div>
+                <%= recaptcha_tags %>
               </div>
               <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message">Send Message</button></div>
             </form>
