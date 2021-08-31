@@ -27,6 +27,7 @@ Rails.application.config.assets.precompile += %w( css/style.css )
 Rails.application.config.assets.precompile += %w( lib/jquery/jquery.min.js )
 Rails.application.config.assets.precompile += %w( lib/jquery/jquery-migrate.min.js )
 Rails.application.config.assets.precompile += %w( lib/bootstrap/js/bootstrap.bundle.min.js )
+Rails.application.config.assets.precompile += %w( lib/bootstrap/js/bootstrap.min.js )
 Rails.application.config.assets.precompile += %w( lib/easing/easing.min.js )
 Rails.application.config.assets.precompile += %w( lib/mobile-nav/mobile-nav.js )
 Rails.application.config.assets.precompile += %w( lib/wow/wow.min.js )
@@ -35,6 +36,8 @@ Rails.application.config.assets.precompile += %w( lib/counterup/counterup.min.js
 Rails.application.config.assets.precompile += %w( lib/owlcarousel/owl.carousel.min.js )
 Rails.application.config.assets.precompile += %w( lib/isotope/isotope.pkgd.min.js )
 Rails.application.config.assets.precompile += %w( lib/lightbox/js/lightbox.min.js )
+Rails.application.config.assets.precompile += %w( lib/wow/wow.min.js )
+
 #<!-- Contact Form JavaScript File -->
 Rails.application.config.assets.precompile += %w( contactform/contactform.js )
 #<!-- Template Main Javascript File -->
