@@ -1219,12 +1219,12 @@ Header
 
     L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
        attribution: 'Map data &copy; OpenStreetMap contributors',
-       maxZoom: 16,
+       maxZoom: 12,
     }).addTo(map);
 
     var marker = L.marker([36.20668047768116, 5.438146650808376]).addTo(map);
 
-    marker.bindPopup("<b>EURL Next Challenge</b>").openPopup();
+    marker.bindPopup('<%= image_tag ("img/next_challenge.jpg"), style: 'height:100px;width:100px;'%>').openPopup();
 
     // var popup = L.popup()
     // .setLatLng([36.19112, 5.41373])
