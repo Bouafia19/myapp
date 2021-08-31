@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
-  root 'welcome#anglais'
+  root 'welcome#index'
   resources :welcomes
-  get 'anglais', to: 'welcome#anglais'
+  get 'index', to: 'welcome#index'
   
 
 end

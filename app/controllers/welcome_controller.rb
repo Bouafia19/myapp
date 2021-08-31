@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def anglais
+  def index
   end
 
   
