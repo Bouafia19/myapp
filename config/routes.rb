@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
   resources :welcomes
+  resources :contacts, only: [:new, :create]
   get 'index', to: 'welcome#index'
   
 
