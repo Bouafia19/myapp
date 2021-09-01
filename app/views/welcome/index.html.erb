@@ -1182,7 +1182,7 @@ Header
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong>Eurl Next Challenge</strong>. All Rights Reserved
+      &copy; Copyright <strong>EURL NEXT CHALLENGE</strong>. All Rights Reserved
     </div>
     <div class="credits">
       <!--
@@ -1202,19 +1202,13 @@ Header
 
 
 
-
-
 </body>
 
 <script>
    var map = L.map('map',{
-      
         center: [36.19112, 5.41373],
         zoom: 12,
         fullscreenControl: true,
-        
-       // drawControl: true
-
     });
 
     L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1226,10 +1220,6 @@ Header
 
     marker.bindPopup('<%= image_tag ("img/next_challenge.jpg"), style: 'height:100px;width:100px;'%>').openPopup();
 
-    // var popup = L.popup()
-    // .setLatLng([36.19112, 5.41373])
-    // .setContent("I am a standalone popup.")
-    // .openOn(map);
 </script>
 
 </html>
