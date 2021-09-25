@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Next Challenge</title>
@@ -7,20 +6,22 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+  <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
 
   <!-- Make sure you put this AFTER Leaflet's CSS -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+          integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+          crossorigin="">
+  </script>
 
   <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
  
   <style>
-    #map { width: 100%; height: 420px; }
+    #map { width: 100%; height: 420px; z-index: 7; }
   </style>
 </head>
 
@@ -34,37 +35,28 @@ Header
 
     <div class="logo float-left">
       <!-- Uncomment below if you prefer to use an image logo -->
-      <h1 class="text-light"><a href="#header"><span>Next Challenge</span></a></h1> 
+      <h1 class="text-light"><a href="#header"><span><%= t 'header'%></span></a></h1> 
       <%# <a href="#intro" class="scrollto">= image_tag ("img/logo1.png"), class: "img-fluid"</a> %>
     </div>
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#intro">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Technologies</a></li>
-        <!-- <li class="drop-down"><a href="">Drop Down</a>
+        <li class="active"><a href="#intro"><%= t 'main_nav.home'%></a></li>
+        <li><a href="#about"><%= t 'main_nav.about_us'%></a></li>
+        <li><a href="#services"><%= t 'main_nav.services'%></a></li>
+        <li><a href="#portfolio"><%= t 'main_nav.portfolio'%></a></li>
+        <li><a href="#team"><%= t 'main_nav.technologies'%></a></li>
+        <li><a href="#contact"><%= t 'main_nav.contact_us'%> &emsp; </a></li>
+
+        
+        <li class="drop-down"><a href=""><i class="fa fa-language fa-lg" aria-hidden="true"></i></a>
           <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="drop-down"><a href="#">Drop Down 2</a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-            <li><a href="#">Drop Down 5</a></li>
+            <li><a href="<%= root_path(locale: :en) %>"><%= image_tag ("img/united-states.png"), style: 'height:20%; width:20%;'%>&ensp;<%= t 'main_nav.language.english'%></a></li>
+            <li><a href="<%= root_path(locale: :fr) %>"><%= image_tag ("img/france.png"), style: 'height:20%; width:20%;'%>&ensp;<%= t 'main_nav.language.frensh'%>&nbsp;</a></li>
+            <li><a href="<%= root_path(locale: :ar) %>"><%= image_tag ("img/algeria.png"), style: 'height:20%; width:20%;'%>&ensp;<%= t 'main_nav.language.arabic'%>&nbsp;</a></li>
+            
           </ul>
-        </li>  -->
-        <li><a href="#contact">Contact Us &emsp; </a></li>
-        
-        
+        </li>  
         
       </ul>
     </nav><!-- .main-nav -->
@@ -83,10 +75,10 @@ Header
     </div>
 
     <div class="intro-info">
-      <h2>We provide<br><span>SOLUTIONS</span><br>for your business!</h2>
+      <h2><%= t 'intro_info.provide'%><br><span><%= t 'intro_info.solution'%></span><br><%= t 'intro_info.business'%></h2>
       <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#services" class="btn-services scrollto">Our Services</a>
+        <a href="#about" class="btn-get-started scrollto"><%= t 'btn_get_started'%></a>
+        <a href="#services" class="btn-services scrollto"><%= t 'btn_services'%></a>
       </div>
     </div>
 
@@ -102,33 +94,33 @@ Header
     <div class="container">
 
       <header class="section-header">
-        <h3>About Us</h3>
-        <p>Help Companies create new customer experiences, improve operational efficiencies and ensure IT delivers.</p>
+        <h3><%= t 'section_about.about_us'%></h3>
+        <p><%= t 'section_about.p'%></p>
       </header>
 
       <div class="row about-container">
 
         <div class="col-lg-6 content order-lg-1 order-2">
-          <p>
-          Next Challenge is a company that do full stack web development and IT administration.
+          <p dir="rtl">
+            <%= t 'section_about.introduction.p'%>
           </p>
 
           <div class="icon-box wow fadeInUp">
-            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-            <h4 class="title"><a href="">Front End development</a></h4>
-            <p class="description">Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.</p>
+            <div class="icon"><%= image_tag ("img/ux.png"), class: "img-fluid"%></div>
+            <h4 dir="rtl" class="title"><a href=""><%= t 'section_about.introduction.front_title'%></a></h4>
+            <p dir="rtl" class="description"><%= t 'section_about.introduction.front_description'%></p>
           </div>
 
           <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-            <div class="icon"><i class="fa fa-photo"></i></div>
-            <h4 class="title"><a href="">Back End development</a></h4>
-            <p class="description">Back-end development is the skill that powers the web. Backend development languages handle the 'behind-the-scenes' functionality of web applications. It's code that connects the web to a database, manages user connections, and powers the web application itself.</p>
+            <div class="icon"><%= image_tag ("img/data-server.png"), class: "img-fluid"%></div>
+            <h4 class="title"><a href=""><%= t 'section_about.introduction.back_title'%></a></h4>
+            <p class="description"><%= t 'section_about.introduction.back_description'%></p>
           </div>
 
           <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-            <div class="icon"><i class="fa fa-bar-chart"></i></div>
-            <h4 class="title"><a href="">DevOps</a></h4>
-            <p class="description">DevOps is a set of practices that combines software development and information-technology operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.</p>
+            <div class="icon"><%= image_tag ("img/devops.png"), class: "img-fluid"%></div>
+            <h4 class="title"><a href=""><%= t 'section_about.introduction.devops_title'%></a></h4>
+            <p class="description"><%= t 'section_about.introduction.devops_description'%></p>
           </div>
 
         </div>
@@ -143,9 +135,9 @@ Header
           <%= image_tag ("img/about-extra-1.svg"), class: "img-fluid"%>
         </div>
         <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-          <h4>EXPERIENCE</h4>
+          <h4><%= t 'section_about.experience.h4'%></h4>
           <p>
-            Our team has several years of experience, several projects have been carried out including the development of web applications and administration of computer networks.
+            <%= t 'section_about.experience.p'%>
           </p>
           <p>
            
@@ -159,9 +151,9 @@ Header
         </div>
 
         <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-          <h4>PRINCIPLE</h4>
+          <h4 ><%= t 'section_about.principle.h4'%></h4>
           <p>
-            Our principle as engineers is to inform you, offer you and guide you in the computerization or even the optimization of your systems.
+            <%= t 'section_about.principle.p'%>
           </p>
           <p>
           </p>
@@ -181,57 +173,57 @@ Header
     <div class="container">
 
       <header class="section-header">
-        <h3>Services</h3>
-        <p>Helping business accelerate their journey to become cognitive enterprises.</p>
+        <h3><%= t 'section_services.services'%></h3>
+        <p><%= t 'section_services.p'%></p>
       </header>
 
       <div class="row">
 
         <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><i class="ion-social-nodejs" style="color: #41cf2e;"></i></div>
-            <h4 class="title"><a href="">Web Application Development</a></h4>
-            <p class="description">Web application development is the creation of application programs that reside on remote servers and are delivered to the user's device over the Internet.</p>
+            <div class="icon"><%= image_tag ("img/ruby.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_web'%></a></h4>
+            <p class="description"><%= t 'section_services.description_web'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><i class="ion-social-android-outline" style="color: #3fcdc7;"></i></div>
-            <h4 class="title"><a href="">Mobile Application Development</a></h4>
-            <p class="description">Our mobile development team loves to be challenged and has vast experience building customized solutions for our customers with Scalable Technology.</p>
+            <div class="icon"><%= image_tag ("img/android.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_mobile'%></a></h4>
+            <p class="description"><%= t 'section_services.description_mobile'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><i class="ion-social-python" style="color: #4680ff;"></i></div>
-            <h4 class="title"><a href="">ERP Development</a></h4>
-            <p class="description">ERP software handles the management of main business processes in real-time. ERP applications collect, store, manage and interpret information from various business activities.</p>
+            <div class="icon"><%= image_tag ("img/python.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_erp'%></a></h4>
+            <p class="description"><%= t 'section_services.description_erp'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-            <h4 class="title"><a href="">UI/UX Design</a></h4>
-            <p class="description">The goal of user interface design is to make the user's interaction with the application as simple and efficient as possible, in terms of accomplishing user expectations.</p>
+            <div class="icon"><%= image_tag ("img/experience.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_ui/ux'%></a></h4>
+            <p class="description"><%= t 'section_services.description_ui/ux'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-          <div class="box">
-            <div class="icon"><i class="ion-social-tux" style="color: #fcba03;"></i></div>
-            <h4 class="title"><a href="">Maintenance & Support</a></h4>
-            <p class="description">The customer service offer a variety of maintenance modalities to our clients and also continuous evolution of our products during the after-sales phase of the projects.</p>
+          <div  class="box">
+            <div class="icon"><%= image_tag ("img/gnu-bash.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_support'%></a></h4>
+            <p class="description"><%= t 'section_services.description_support'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><i class="ion-ios-cart-outline" style="color: #fc0303;"></i></div>
-            <h4 class="title"><a href="">Ecommerce Development</a></h4>
-            <p class="description">Our dedicated ecommerce developers experts can ensure that your site performs,have ecommerce features, offering scalability and integration solutions.</p>
+            <div class="icon"><%= image_tag ("img/javascript.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_ecommerce'%></a></h4>
+            <p class="description"><%= t 'section_services.description_ecommerce'%></p>
           </div>
         </div>
 
@@ -246,8 +238,8 @@ Header
   <section id="why-us" class="wow fadeIn">
     <div class="container">
       <header class="section-header">
-        <h3>Why choose us?</h3>
-        <p>We are the best.</p>
+        <h3><%= t 'section_why_us.h3'%></h3>
+        <p><%= t 'section_why_us.p'%></p>
       </header>
 <!--
       <div class="row row-eq-height justify-content-center">
@@ -321,7 +313,7 @@ Header
     <div class="container">
 
       <header class="section-header">
-        <h3 class="section-title">Our Portfolio</h3>
+        <h3 class="section-title"><%= t 'section_portfolio.title'%></h3>
       </header>
 
       <div class="row">
@@ -808,13 +800,13 @@ Header
   </section>
 
   <!--==========================
-    Clients Section
+    Quotes Section
   ============================-->
   <section id="testimonials" class="section-bg">
     <div class="container">
 
       <header class="section-header">
-        <h3>Quotes</h3>
+        <h3><%= t 'section_quotes.h3'%></h3>
       </header>
 
       <div class="row justify-content-center">
@@ -823,42 +815,42 @@ Header
           <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
             <div class="testimonial-item">
-              <h3>Steve Jobs</h3>
-              <h4>Ceo &amp; Founder of Apple</h4>
-              <p>
-                You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out.
+              <h3 dir="auto"><%= t 'section_quotes.testimonial.a.h3'%></h3>
+              <h4 dir="auto"><%= t 'section_quotes.testimonial.a.h4'%></h4>
+              <p dir="auto">
+                <%= t 'section_quotes.testimonial.a.p'%>
               </p>
             </div>
 
             <div class="testimonial-item">
-              <h3>Bill Gates</h3>
-              <h4>Ceo &amp; Founder of Microsoft</h4>
+              <h3><%= t 'section_quotes.testimonial.b.h3'%></h3>
+              <h4><%= t 'section_quotes.testimonial.b.h4'%></h4>
               <p>
-                Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself.
+                <%= t 'section_quotes.testimonial.b.p'%>
               </p>
             </div>
 
             <div class="testimonial-item">
-              <h3>Tony Hsieh</h3>
-              <h4>CEO of Zappos</h4>
+              <h3><%= t 'section_quotes.testimonial.c.h3'%></h3>
+              <h4><%= t 'section_quotes.testimonial.c.h4'%></h4>
               <p>
-                Stop chasing the money and start chasing the passion.
+                <%= t 'section_quotes.testimonial.c.p'%>
               </p>
             </div>
 
             <div class="testimonial-item">
-              <h3>Jack Ma</h3>
-              <h4>Co-founder and former executive chairman of Alibaba Group</h4>
+              <h3><%= t 'section_quotes.testimonial.d.h3'%></h3>
+              <h4><%= t 'section_quotes.testimonial.d.h4'%></h4>
               <p>
-                No matter how tough the chase is, you should always have the dream you saw on the first day. It’ll keep you motivated and rescue you (from any weak thoughts).
+                <%= t 'section_quotes.testimonial.d.p'%>
               </p>
             </div>
 
             <div class="testimonial-item">
-              <h3>Elon Musk</h3>
-              <h4>Founder, CEO, Lead Designer of SpaceX</h4>
+              <h3><%= t 'section_quotes.testimonial.e.h3'%></h3>
+              <h4><%= t 'section_quotes.testimonial.e.h4'%></h4>
               <p>
-                When something is important enough, you do it even if the odds are not in your favor.
+                <%= t 'section_quotes.testimonial.e.p'%>
               </p>
             </div>
 
@@ -961,15 +953,15 @@ Header
   </section><!-- #team -->
 
   <!--==========================
-    Clients Section
+    Technologies Section
   ============================-->
   <section id="clients" class="section-bg">
 
     <div class="container">
 
       <div class="section-header">
-        <h3>Our Technologies</h3>
-        <p>Set of technologies that we are perfectly familiar with to make sure you will have the best services possible.</p>
+        <h3><%= t 'section_technologies.h3'%></h3>
+        <p><%= t 'section_technologies.p'%></p>
       </div>
 
       <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
@@ -1058,7 +1050,7 @@ Header
     <div class="container-fluid">
 
       <div class="section-header">
-        <h3>Contact Us</h3>
+        <h3><%= t 'section_contact.h3'%></h3>
       </div>
 
       <div class="row wow fadeInUp">
@@ -1072,15 +1064,15 @@ Header
         <div class="col-lg-6">
           <div class="row">
             <div class="col-md-5 info">
-              <i class="ion-ios-location-outline"></i>
-              <p>CITE HACHEMI NOUV 221 LOTS N° 217 A.P.C DE SETIF</p>
+              <i class="ion-ios-location-outline" style="color:#00366f;"></i>
+              <p><%= t 'section_contact.info.location'%></p>
             </div>
             <div class="col-md-4 info">
-              <i class="ion-ios-email-outline"></i>
+              <i class="ion-ios-email-outline" style="color:#00366f;"></i>
               <p>contact@nextchallenge-dz.com</p>
             </div>
             <div class="col-md-3 info">
-              <i class="ion-ios-telephone-outline"></i>
+              <i class="ion-ios-telephone-outline" style="color:#00366f;"></i>
               <p>+213 552 56 96 54</p>
             </div>
           </div>
@@ -1089,28 +1081,28 @@ Header
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage">Sorry there is a problem</div>
             <%# <form action="https://formspree.io/f/xknqewla" method="post" role="form" class="contactForm"> %>
-            <%= form_for Contact.new, html: { class: "contactForm" } do |f| %>
+            <%= form_for @contact, html: { class: "contactForm" } do |f| %>
               <div class="form-row">
                 <div class="form-group col-lg-6">
                   <%# <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> %>
-                  <%= f.text_field :name, placeholder: "Your Name", class: "form-control" %>
+                  <%= f.text_field :name, placeholder: "#{t('section_contact.form.name')}", class: "form-control" %>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-lg-6">
                   <%# <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /> %>
-                  <%= f.text_field :email, placeholder: "Your Email", class: "form-control" %>
+                  <%= f.text_field :email, placeholder: "#{t('section_contact.form.email')}", class: "form-control" %>
                   <div class="validation"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="message" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <%#= f.text_field :subject, placeholder: "Subject", class: "form-control" %>
+                <%# <input type="text" class="form-control" name="subject" id="message" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" /> %>
+                <%= f.text_field :subject, placeholder: "#{t('section_contact.form.subject')}", class: "form-control" %>
                 <div class="validation"></div>
               </div>
               
               <div class="form-group">
                 <%# <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea> %>
-                <%= f.text_area :message, placeholder: "Message" ,class: 'form-control', rows: "5" %>
+                <%= f.text_area :message, placeholder: "#{t('section_contact.form.message')}" ,class: 'form-control', rows: "5" %>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
@@ -1119,7 +1111,7 @@ Header
               </div>
               <%# <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message">Send Message</button></div> %>
               <div class="text-center">
-                <%= f.submit "Send Message", class: "btn btn-primary" %>
+                <%= f.submit "#{t('section_contact.form.button')}", class: "btn btn-primary" %>
               </div>
             <%# </form> %>
             <% end %>
@@ -1142,31 +1134,31 @@ Header
       <div class="row">
 
          <div class="col-lg-4 col-md-6 footer-info">
-          <h3>Eurl Next Challenge</h3>
+          <h3><%= t 'footer.h3'%></h3>
           <p></p>
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4><%= t 'footer.h4'%></h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#"><%= t 'footer.menu.home'%></a></li>
+            <li><a href="#about"><%= t 'footer.menu.about_us'%></a></li>
+            <li><a href="#services"><%= t 'footer.menu.services'%></a></li>
+            <li><a href="#portfolio"><%= t 'footer.menu.portfolio'%></a></li>
             <%# <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li> %>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-contact">
-          <h4>Contact Us</h4>
+          <h4><%= t 'footer.contact.h4'%></h4>
           <p>
-            CITE HACHEMI NOUV 221 <br>
-            LOTS N° 217 A.P.C DE SETIF<br>
-            ALGERIA <br>
-            <strong>Phone:</strong> +213 552 56 96 54<br>
-            <strong>Email:</strong> contact@nextchallenge-dz.com<br>
-            <strong>Activity:</strong> Bureau d'étude et de conseil en informatique (consulting)<br>
+            <%= t 'footer.contact.address.p1'%> <br>
+            <%= t 'footer.contact.address.p2'%><br>
+            <%= t 'footer.contact.address.p3'%> <br>
+            <strong><%= t 'footer.contact.phone'%>:</strong> +213 552 56 96 54<br>
+            <strong><%= t 'footer.contact.email'%>:</strong> contact@nextchallenge-dz.com<br>
+            <strong><%= t 'footer.contact.activity'%>:</strong><%= t 'footer.contact.strong'%><br>
           </p>
 
           <div class="social-links">
@@ -1193,7 +1185,7 @@ Header
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong>EURL NEXT CHALLENGE</strong>. All Rights Reserved
+      &copy; <%= t 'copyright.copyright'%> <strong><%= t 'copyright.strong'%></strong>. <%= t 'copyright.rights'%>
     </div>
     <div class="credits">
       <!--
@@ -1202,7 +1194,7 @@ Header
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
       -->
-      Designed by <a href="https://bootstrapmade.com/">Khaled Bouafia</a>
+      <%= t 'copyright.designed'%> <a href="https://bootstrapmade.com/"><%= t 'copyright.name'%></a>
     </div>
   </div>
 </footer><!-- #footer -->
@@ -1211,8 +1203,19 @@ Header
 <!-- Uncomment below i you want to use a preloader -->
 <!-- <div id="preloader"></div> -->
 
-
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6145d23b25797d7a89ffa242/1ffsbqeev';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 <script>
@@ -1233,4 +1236,4 @@ Header
 
 </script>
 
-</html>
+

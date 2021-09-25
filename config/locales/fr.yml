@@ -1,0 +1,116 @@
+fr:
+  header: "Next Challenge"
+  main_nav: 
+    home: "Accueil"
+    about_us: "À propos"
+    services: "Services"
+    portfolio: "Portfolio"
+    technologies: "Technologies"
+    contact_us: "Contact"
+    language: 
+      english: "Anglais"
+      frensh: "Français"
+      arabic: "Arabe"
+  intro_info: 
+    provide: "Nous fournissons"
+    solution: "DES SOLUTIONS"
+    business: "pour votre entreprise!"
+  btn_get_started: "Commencer"
+  btn_services: "Nos services"
+  section_about:
+    about_us: "À propos"
+    p: "Aider les entreprises à créer de nouvelles expériences client, à améliorer l'efficacité opérationnelle et à garantir la livraison"
+    introduction:
+      p: "Next Challenge est une entreprise qui fait du développement de génie logiciel qui contient les parties principales :"
+      front_title: "Développement front-end"
+      front_description: "Le développement Web frontal consiste à convertir des données en une interface graphique, à l'aide de HTML, CSS et JavaScript, afin que les utilisateurs puissent afficher et interagir avec ces données."
+      back_title: "Développement back-end"
+      back_description: "Le développement back-end est la compétence qui alimente le Web. Les langages de développement backend gèrent les fonctionnalités « en coulisses » des applications Web. C'est un code qui connecte le Web à une base de données, gère les connexions des utilisateurs et alimente l'application Web elle-même."
+      devops_title: "DevOps"
+      devops_description: "DevOps est un ensemble de pratiques qui combine le développement de logiciels et les opérations informatiques qui visent à raccourcir le cycle de vie du développement des systèmes et à fournir une livraison continue avec une qualité logicielle élevée."
+    experience: 
+      h4: "EXPERIENCE"
+      p: "Notre équipe a plusieurs années d'expérience, plusieurs projets ont été réalisés dont le développement d'applications web et l'administration de réseaux informatiques."
+    principle:
+      h4: "PRINCIPE"
+      p: "Notre principe en tant qu'ingénieurs est de vous informer, vous proposer et vous guider dans l'informatisation voire l'optimisation de vos systèmes."
+  section_services:
+    services: "Services"
+    p: "Aider les entreprises à accélérer leur parcours pour devenir des entreprises cognitives"
+    title_web: "Développement d'applications Web"
+    description_web: "Le développement d'applications Web est la création de programmes d'application qui résident sur des serveurs distants et sont livrés à l'appareil de l'utilisateur via Internet."
+    title_mobile: "Développement d'applications mobiles"
+    description_mobile: "Notre équipe de développement mobile aime relever des défis et possède une vaste expérience dans la création de solutions personnalisées pour nos clients avec la technologie évolutive."
+    title_erp: "Développement ERP"
+    description_erp: "Le logiciel ERP gère la gestion des principaux processus commerciaux en temps réel. Les applications ERP collectent, stockent, gèrent et interprètent les informations de diverses activités commerciales."
+    title_ui/ux: "Conception UI/UX"
+    description_ui/ux: "L'objectif de la conception de l'interface utilisateur est de rendre l'interaction de l'utilisateur avec l'application aussi simple et efficace que possible, en termes de réalisation des attentes de l'utilisateur."
+    title_support: "Entretien et assistance"
+    description_support: "Le service client offre une variété de modalités de maintenance à nos clients ainsi qu'une évolution continue de nos produits pendant la phase après-vente des projets."
+    title_ecommerce: "Développement du commerce électronique"
+    description_ecommerce: "Nos experts en développement de commerce électronique dédiés peuvent s'assurer que votre site fonctionne, dispose de fonctionnalités de commerce électronique, offrant des solutions d'évolutivité et d'intégration."
+  section_why_us:
+    h3: "Pourquoi nous choisir?"
+    p: "Nous sommes les meilleurs."
+  section_portfolio:
+    title: "nos projets"
+  section_quotes:
+    h3: "Devis"
+    testimonial:
+      a:
+        h3: "Steve Jobs"
+        h4: "PDG et fondateur d'Apple"
+        p: "Vous devez être brûlant d'une idée, d'un problème ou d'un tort que vous voulez réparer. Si vous n'êtes pas assez passionné dès le départ, vous ne vous en sortirez jamais."
+      b:
+        h3: "Bill Gates"
+        h4: "PDG et fondateur de Microsoft"
+        p: "Ne vous comparez à personne dans ce monde… si vous le faites, vous vous insultez."
+      c:
+        h3: "Tony Hsieh"
+        h4: "PDG de Zappos"
+        p: "Arrêtez de courir après l'argent et commencez à courir après la passion."
+      d:
+        h3: "Jack Ma"
+        h4: "Co-fondateur et ancien président exécutif du groupe Alibaba"
+        p: "Peu importe à quel point la poursuite est difficile, vous devriez toujours avoir le rêve que vous avez vu le premier jour. Cela vous gardera motivé et vous sauvera (de toutes les pensées faibles)."
+      e:
+        h3: "Elon Musk"
+        h4: "Fondateur, PDG, concepteur principal de SpaceX"
+        p: "Quand quelque chose est assez important, vous le faites même si les chances ne sont pas en votre faveur."
+  section_technologies:
+    h3: "Nos technologies"
+    p: "Ensemble de technologies que nous connaissons parfaitement pour vous garantir les meilleurs services possibles."
+  section_contact:
+    h3: "Nous contacter"
+    info:
+      location: "CITE HACHEMI NOUV 221 LOTS N° 217 A.P.C DE SETIF"
+    form:
+      name: "Votre Nom"
+      email: "Votre Email"
+      subject: "Sujet"
+      message: "Un message"
+      button: "Envoyer le message"
+  footer:
+    h3: "Eurl Next Challenge"
+    h4: "Liens utiles"
+    menu: 
+      home: "Accueil"
+      about_us: "À propos"
+      services: "Services"
+      portfolio: "Portfolio"
+    contact:
+      h4: "Contact"
+      address:
+        p1: "CITE HACHEMI NOUV 221"
+        p2: "LOTS N° 217 A.P.C DE SETIF"
+        p3: "ALGERIA"
+      phone: "Phone"
+      email: "Email"
+      activity: "Activity"
+      strong: " Bureau d etude et de conseil en informatique (consulting)"
+  copyright:
+    copyright: "Droits d'auteur"
+    strong: "EURL NEXT CHALLENGE"
+    rights:  "Tous les droits sont réservés"
+    designed: "Conçu par"
+    name: "Khaled Bouafia"

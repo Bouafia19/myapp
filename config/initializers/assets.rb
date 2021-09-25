@@ -21,6 +21,8 @@ Rails.application.config.assets.precompile += %w( lib/ionicons/css/ionicons.min.
 Rails.application.config.assets.precompile += %w( lib/owlcarousel/assets/owl.carousel.min.css )
 Rails.application.config.assets.precompile += %w( lib/lightbox/css/lightbox.min.css )
 Rails.application.config.assets.precompile += %w( css/style.css )
+Rails.application.config.assets.precompile += %w( css/style_rtl.css )
+Rails.application.config.assets.precompile += %w( lib/bootstrap/css/bootstrap_rtl.css )
 
 
 # js

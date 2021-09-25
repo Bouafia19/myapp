@@ -1,33 +1,116 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  header: "Next Challenge"
+  main_nav: 
+    home: "Home"
+    about_us: "About Us"
+    services: "Services"
+    portfolio: "Portfolio"
+    technologies: "Technologies"
+    contact_us: "Contact Us"
+    language: 
+      english: "English"
+      frensh: "Frensh"
+      arabic: "Arabic"
+  intro_info:
+    provide: "We provide"
+    solution: "SOLUTIONS"
+    business: "for your business!"
+  btn_get_started: "Get Started"
+  btn_services: "Our Services"
+  section_about:
+    about_us: "About Us"
+    p: "Help Companies create new customer experiences, improve operational efficiencies and ensure IT delivers"
+    introduction:
+      p: "Next Challenge is a company that do software engineering development that contain the main parts:"
+      front_title: "Front End development"
+      front_description: "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data."
+      back_title: "Back End development"
+      back_description: "Back-end development is the skill that powers the web. Backend development languages handle the 'behind-the-scenes' functionality of web applications. It's code that connects the web to a database, manages user connections, and powers the web application itself."
+      devops_title: "DevOps"
+      devops_description: "DevOps is a set of practices that combines software development and information-technology operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality."
+    experience: 
+      h4: "EXPERIENCE"
+      p: "Our team has several years of experience, several projects have been carried out including the development of web applications and administration of computer networks."
+    principle:
+      h4: "PRINCIPLE"
+      p: "Our principle as engineers is to inform you, offer you and guide you in the computerization or even the optimization of your systems."
+  section_services:
+    services: "Services"
+    p: "Helping business accelerate their journey to become cognitive enterprises"
+    title_web: "Web Application Development"
+    description_web: "Web application development is the creation of application programs that reside on remote servers and are delivered to the user's device over the Internet."
+    title_mobile: "Mobile Application Development"
+    description_mobile: "Our mobile development team loves to be challenged and has vast experience building customized solutions for our customers with Scalable Technology."
+    title_erp: "ERP Development"
+    description_erp: "ERP software handles the management of main business processes in real-time. ERP applications collect, store, manage and interpret information from various business activities."
+    title_ui/ux: "UI/UX Design"
+    description_ui/ux: "The goal of user interface design is to make the user's interaction with the application as simple and efficient as possible, in terms of accomplishing user expectations."
+    title_support: "Maintenance & Support"
+    description_support: "The customer service offer a variety of maintenance modalities to our clients and also continuous evolution of our products during the after-sales phase of the projects."
+    title_ecommerce: "Ecommerce Development"
+    description_ecommerce: "Our dedicated ecommerce developers experts can ensure that your site performs,have ecommerce features, offering scalability and integration solutions."
+  section_why_us:
+    h3: "Why choose us?"
+    p: "We are the best."
+  section_portfolio:
+    title: "Our Portfolio"
+  section_quotes:
+    h3: "Quotes"
+    testimonial:
+      a:
+        h3: "Steve Jobs"
+        h4: "Ceo and Founder of Apple"
+        p: "You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out."
+      b:
+        h3: "Bill Gates"
+        h4: "Ceo and Founder of Microsoft"
+        p: "Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself."
+      c:
+        h3: "Tony Hsieh"
+        h4: "CEO of Zappos"
+        p: "Stop chasing the money and start chasing the passion."
+      d:
+        h3: "Jack Ma"
+        h4: "Co-founder and former executive chairman of Alibaba Group"
+        p: "No matter how tough the chase is, you should always have the dream you saw on the first day. It’ll keep you motivated and rescue you (from any weak thoughts)."
+      e:
+        h3: "Elon Musk"
+        h4: "Founder, CEO, Lead Designer of SpaceX"
+        p: "When something is important enough, you do it even if the odds are not in your favor."
+  section_technologies:
+    h3: "Our Technologies"
+    p: "Set of technologies that we are perfectly familiar with to make sure you will have the best services possible."
+  section_contact:
+    h3: "Contact Us"
+    info:
+      location: "CITE HACHEMI NEW 221 LOTS N° 217 SETIF"
+    form:
+      name: "Your Name"
+      email: "Your Email"
+      subject: "Subject"
+      message: "Message"
+      button: "Send Message"
+  footer:
+    h3: "Eurl Next Challenge"
+    h4: "Useful Links"
+    menu: 
+      home: "Home"
+      about_us: "About us"
+      services: "Services"
+      portfolio: "Portfolio"
+    contact:
+      h4: "Contact Us"
+      address:
+        p1: "CITE HACHEMI NOUV 221"
+        p2: "LOTS N° 217 A.P.C DE SETIF"
+        p3: "ALGERIA"
+      phone: "Phone"
+      email: "Email"
+      activity: "Activity"
+      strong: "IT study and consultancy office (consulting)"
+  copyright:
+    copyright: "Copyright"
+    strong: "EURL NEXT CHALLENGE"
+    rights:  "All Rights Reserved"
+    designed: "Designed by"
+    name: "Khaled Bouafia"
