@@ -242,10 +242,10 @@ h6 {
 
 /* Desktop Navigation */
 
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
+/* .main-nav {
+  Drop Down
+  Deep Drop Down
+} */
 
 .main-nav,
 .main-nav * {
@@ -638,6 +638,7 @@ h6 {
   margin-right: 40px;
   line-height: 24px;
   margin-bottom: 0;
+  margin-left: 0;
 }
 
 #why-us {
