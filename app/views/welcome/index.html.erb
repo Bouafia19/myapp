@@ -71,7 +71,7 @@ Header
   <div class="container">
 
     <div class="intro-img">
-      <%= image_tag ("img/undraw_design_notes_8dmv.svg"), class: "img-fluid"%>
+      <%= image_tag ("img/undraw_Outer_space_re_u9vd.svg"), class: "img-fluid", style: 'height:80%; width:90%;'%>
     </div>
 
     <div class="intro-info">
@@ -132,7 +132,7 @@ Header
 
       <div class="row about-extra">
         <div class="col-lg-6 wow fadeInUp">
-          <%= image_tag ("img/about-extra-1.svg"), class: "img-fluid"%>
+          <%= image_tag ("img/undraw_Code_thinking_re_gka2.svg"), class: "img-fluid", style: 'height:100%; width:100%;'%>
         </div>
         <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
           <h4><%= t 'section_about.experience.h4'%></h4>
@@ -147,7 +147,7 @@ Header
 
       <div class="row about-extra">
         <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-          <%= image_tag ("img/about-extra-2.svg"), class: "img-fluid"%>
+          <%= image_tag ("img/undraw_version_control_re_mg66.svg"), class: "img-fluid", style: 'height:100%; width:100%;'%>
         </div>
 
         <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
@@ -1084,24 +1084,24 @@ Header
             <%#= form_for @contact, html: { class: "contactForm" } do |f| %>
               <div class="form-row">
                 <div class="form-group col-lg-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="<%= t 'section_contact.form.name'%>" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <%#= f.text_field :name, placeholder: "#{t('section_contact.form.name')}", class: "form-control" %>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="<%= t 'section_contact.form.email'%>" data-rule="email" data-msg="Please enter a valid email" />
                   <%#= f.text_field :email, placeholder: "#{t('section_contact.form.email')}", class: "form-control" %>
                   <div class="validation"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="message" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="message" placeholder="<%= t 'section_contact.form.subject'%>" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <%#= f.text_field :subject, placeholder: "#{t('section_contact.form.subject')}", class: "form-control" %>
                 <div class="validation"></div>
               </div>
               
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="<%= t 'section_contact.form.message'%>"></textarea>
                 <%#= f.text_area :message, placeholder: "#{t('section_contact.form.message')}" ,class: 'form-control', rows: "5" %>
                 <div class="validation"></div>
               </div>
@@ -1109,7 +1109,7 @@ Header
                 <%#= recaptcha_tags %>
                  <%#= f.hidden_field :nickname, class: 'form-control' %>
               </div>
-              <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message">Send Message</button></div>
+              <div class="text-center"><button id="sendMessageButton" type="submit" title="Send Message"><%= t 'section_contact.form.button'%></button></div>
               <div class="text-center">
                 <%#= f.submit "#{t('section_contact.form.button')}", class: "btn btn-primary" %>
               </div>
