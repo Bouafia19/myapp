@@ -14,12 +14,12 @@ en:
   intro_info:
     provide: "We provide"
     solution: "SOLUTIONS"
-    business: "for your business!"
+    business: "for your business"
   btn_get_started: "Get Started"
   btn_services: "Our Services"
   section_about:
     about_us: "About Us"
-    p: "Help Companies create new customer experiences, improve operational efficiencies and ensure IT delivers"
+    p: "We Help Companies create new customer experiences, improve operational efficiencies and ensure IT delivers"
     introduction:
       p: "Next Challenge is a company that do software engineering development that contain the main parts:"
       front_title: "Front End development"
@@ -30,13 +30,13 @@ en:
       devops_description: "DevOps is a set of practices that combines software development and information-technology operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality."
     experience: 
       h4: "EXPERIENCE"
-      p: "Our team has several years of experience, several projects have been carried out including the development of web applications and administration of computer networks."
+      p: "Our team has several years of experience, several projects have been carried out in web and mobile applications."
     principle:
       h4: "PRINCIPLE"
-      p: "Our principle as engineers is to inform you, offer you and guide you in the computerization or even the optimization of your systems."
+      p: "Our principle as engineers is to inform you, offer you and guide you in the optimization of your systems."
   section_services:
     services: "Services"
-    p: "Helping business accelerate their journey to become cognitive enterprises"
+    p: "Helping companies accelerate their journey to become digital enterprises"
     title_web: "Web Application Development"
     description_web: "Web application development is the creation of application programs that reside on remote servers and are delivered to the user's device over the Internet."
     title_mobile: "Mobile Application Development"
@@ -51,7 +51,7 @@ en:
     description_ecommerce: "Our dedicated ecommerce developers experts can ensure that your site performs,have ecommerce features, offering scalability and integration solutions."
   section_why_us:
     h3: "Why choose us?"
-    p: "We are the best."
+    p: "We are the best"
   section_portfolio:
     title: "Our Portfolio"
   section_quotes:
@@ -107,7 +107,7 @@ en:
       phone: "Phone"
       email: "Email"
       activity: "Activity"
-      strong: "IT study and consultancy office (consulting)"
+      strong: "IT study and consulting office"
   copyright:
     copyright: "Copyright"
     strong: "EURL NEXT CHALLENGE"

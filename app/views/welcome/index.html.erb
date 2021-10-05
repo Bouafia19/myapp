@@ -101,14 +101,14 @@ Header
       <div class="row about-container">
 
         <div class="col-lg-6 content order-lg-1 order-2">
-          <p dir="rtl">
+          <p>
             <%= t 'section_about.introduction.p'%>
           </p>
 
           <div class="icon-box wow fadeInUp">
             <div class="icon"><%= image_tag ("img/ux.png"), class: "img-fluid"%></div>
-            <h4 dir="rtl" class="title"><a href=""><%= t 'section_about.introduction.front_title'%></a></h4>
-            <p dir="rtl" class="description"><%= t 'section_about.introduction.front_description'%></p>
+            <h4 class="title"><a href=""><%= t 'section_about.introduction.front_title'%></a></h4>
+            <p class="description"><%= t 'section_about.introduction.front_description'%></p>
           </div>
 
           <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
@@ -213,17 +213,17 @@ Header
 
         <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
           <div  class="box">
-            <div class="icon"><%= image_tag ("img/gnu-bash.png"), style: 'height:15%; width:15%;'%></div>
-            <h4 class="title"><a href=""><%= t 'section_services.title_support'%></a></h4>
-            <p class="description"><%= t 'section_services.description_support'%></p>
+            <div class="icon"><%= image_tag ("img/javascript.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_ecommerce'%></a></h4>
+            <p class="description"><%= t 'section_services.description_ecommerce'%></p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
           <div class="box">
-            <div class="icon"><%= image_tag ("img/javascript.png"), style: 'height:15%; width:15%;'%></div>
-            <h4 class="title"><a href=""><%= t 'section_services.title_ecommerce'%></a></h4>
-            <p class="description"><%= t 'section_services.description_ecommerce'%></p>
+            <div class="icon"><%= image_tag ("img/gnu-bash.png"), style: 'height:15%; width:15%;'%></div>
+            <h4 class="title"><a href=""><%= t 'section_services.title_support'%></a></h4>
+            <p class="description"><%= t 'section_services.description_support'%></p>
           </div>
         </div>
 
@@ -815,9 +815,9 @@ Header
           <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
             <div class="testimonial-item">
-              <h3 dir="auto"><%= t 'section_quotes.testimonial.a.h3'%></h3>
-              <h4 dir="auto"><%= t 'section_quotes.testimonial.a.h4'%></h4>
-              <p dir="auto">
+              <h3><%= t 'section_quotes.testimonial.a.h3'%></h3>
+              <h4><%= t 'section_quotes.testimonial.a.h4'%></h4>
+              <p>
                 <%= t 'section_quotes.testimonial.a.p'%>
               </p>
             </div>
@@ -1150,23 +1150,23 @@ Header
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-contact">
+        <div class="col-lg-6 col-md-6 footer-contact">
           <h4><%= t 'footer.contact.h4'%></h4>
           <p>
-            <%= t 'footer.contact.address.p1'%> <br>
+            <%= t 'footer.contact.address.p1'%> 
             <%= t 'footer.contact.address.p2'%><br>
             <%= t 'footer.contact.address.p3'%> <br>
-            <strong><%= t 'footer.contact.phone'%>:</strong> +213 552 56 96 54<br>
+            <strong><%= t 'footer.contact.phone'%>:</strong> <span dir="ltr">+213 552 56 96 54</span><br>
             <strong><%= t 'footer.contact.email'%>:</strong> contact@nextchallenge-dz.com<br>
-            <strong><%= t 'footer.contact.activity'%>:</strong><%= t 'footer.contact.strong'%><br>
+            <strong><%= t 'footer.contact.activity'%>:</strong> <%= t 'footer.contact.strong'%><br>
           </p>
 
           <div class="social-links">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.facebook.com/khaled.bouafia.50" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="https://www.linkedin.com/in/khaled-bouafia-7b67aa184" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <%# <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> %>
+            <%# <a href="https://www.facebook.com/khaled.bouafia.50" class="facebook"><i class="fa fa-facebook"></i></a> %>
+            <%# <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> %>
+            <%# <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> %>
+            <%# <a href="https://www.linkedin.com/in/khaled-bouafia-7b67aa184" class="linkedin"><i class="fa fa-linkedin"></i></a> %>
           </div>
 
         </div>

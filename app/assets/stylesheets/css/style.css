@@ -50,7 +50,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #007bff;
+  background: #00366f;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -215,8 +215,8 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #00428a;
+  border: 2px solid #fff;
   color: #fff;
 }
 
@@ -231,8 +231,8 @@ h6 {
 }
 
 #intro .intro-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
+  background: #00428a;
+  border-color: #fff;
   color: #fff;
 }
 
@@ -241,11 +241,11 @@ h6 {
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
-
+/* 
 .main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
+  Drop Down
+  Deep Drop Down
+} */
 
 .main-nav,
 .main-nav * {
@@ -643,7 +643,7 @@ h6 {
 
 #why-us {
   padding: 60px 0;
-  background: #004a99;
+  background: #00366f;
 }
 
 #why-us .section-header h3,
@@ -738,7 +738,7 @@ h6 {
   padding: 6px 20px;
   font-size: 12px;
   line-height: 20px;
-  color: #007bff;
+  color: #00366f;
   border-radius: 50px;
   text-transform: uppercase;
   background: #ecf5ff;
@@ -748,7 +748,7 @@ h6 {
 
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
-  background: #007bff;
+  background: #00366f;
   color: #fff;
 }
 
@@ -919,7 +919,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #007bff;
+  background-color: #00366f;
 }
 
 /* Team Section
@@ -1170,7 +1170,7 @@ h6 {
 }
 
 #contact .form button[type="submit"] {
-  background: #007bff;
+  background: #00366f;
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -1188,7 +1188,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #00428a;
+  background: #00366f;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
@@ -1196,7 +1196,7 @@ h6 {
 }
 
 #footer .footer-top {
-  background: #004a99;
+  background: #00428a;
   padding: 60px 0 30px 0;
 }
 
