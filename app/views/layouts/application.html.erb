@@ -10,28 +10,27 @@
 
     <meta name="google-site-verification" content="TuUl8t6GcqExXK43lZYVFhBxmqME_7NA2MyqTGBGeV4" />
 
-    
     <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet" type="text/css">
   
-  <!-- Bootstrap CSS File -->
-  <%#= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
-  <!-- Libraries CSS Files -->
-  <%= stylesheet_link_tag "lib/font-awesome/css/font-awesome.min.css" %>
-  <%= stylesheet_link_tag "lib/animate/animate.min.css" %>
-  <%= stylesheet_link_tag "lib/ionicons/css/ionicons.min.css" %>
-  <%= stylesheet_link_tag "lib/owlcarousel/assets/owl.carousel.min.css" %>
-  <%= stylesheet_link_tag "lib/lightbox/css/lightbox.min.css" %>
+    <!-- Bootstrap CSS File -->
+    <%#= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
+    <!-- Libraries CSS Files -->
+    <%= stylesheet_link_tag "lib/font-awesome/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "lib/animate/animate.min.css" %>
+    <%= stylesheet_link_tag "lib/ionicons/css/ionicons.min.css" %>
+    <%= stylesheet_link_tag "lib/owlcarousel/assets/owl.carousel.min.css" %>
+    <%= stylesheet_link_tag "lib/lightbox/css/lightbox.min.css" %>
 
-  <!-- Main Stylesheet File -->
-  <% if I18n.locale.to_s == "ar" %>
-    <%= stylesheet_link_tag    "css/style_rtl.css" %>
-    <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap_rtl.css" %>
-  <% else %>
-    <%= stylesheet_link_tag    "css/style.css" %>
-    <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
-  <% end %>
-  <%#= stylesheet_link_tag "css/style.css" %>
+    <!-- Main Stylesheet File -->
+    <% if I18n.locale.to_s == "ar" %>
+      <%= stylesheet_link_tag    "css/style_rtl.css" %>
+      <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap_rtl.css" %>
+    <% else %>
+      <%= stylesheet_link_tag    "css/style.css" %>
+      <%= stylesheet_link_tag "lib/bootstrap/css/bootstrap.min.css" %>
+    <% end %>
+    <%#= stylesheet_link_tag "css/style.css" %>
 
   </head>
 
@@ -45,7 +44,6 @@
       <%= javascript_include_tag('lib/bootstrap/js/bootstrap.min.js') %>
       <%= javascript_include_tag('lib/easing/easing.min.js') %>
       <%= javascript_include_tag('lib/mobile-nav/mobile-nav.js') %>
-      <%= javascript_include_tag('lib/wow/wow.min.js') %>
       <%= javascript_include_tag('lib/waypoints/waypoints.min.js') %>
       <%= javascript_include_tag('lib/counterup/counterup.min.js') %>
       <%= javascript_include_tag('lib/owlcarousel/owl.carousel.min.js') %>

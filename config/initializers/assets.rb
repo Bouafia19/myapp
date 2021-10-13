@@ -38,7 +38,6 @@ Rails.application.config.assets.precompile += %w( lib/counterup/counterup.min.js
 Rails.application.config.assets.precompile += %w( lib/owlcarousel/owl.carousel.min.js )
 Rails.application.config.assets.precompile += %w( lib/isotope/isotope.pkgd.min.js )
 Rails.application.config.assets.precompile += %w( lib/lightbox/js/lightbox.min.js )
-Rails.application.config.assets.precompile += %w( lib/wow/wow.min.js )
 
 #<!-- Contact Form JavaScript File -->
 Rails.application.config.assets.precompile += %w( contactform/contactform.js )

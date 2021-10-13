@@ -95,10 +95,15 @@ jQuery(document).ready(function($) {
       action = 'contactform/contactform.php';
     }
     $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
+      method: "POST",
+      url: "https://formspree.io/f/mvoddrqe",
+      dataType: "json",
+      data: {
+        name: "",
+        message: ""
+      },
       success: function(msg) {
+        console.log(data)
         // alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");

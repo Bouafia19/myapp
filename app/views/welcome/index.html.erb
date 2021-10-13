@@ -1080,7 +1080,7 @@ Header
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage">Sorry there is a problem</div>
-            <form action="https://formspree.io/f/mvoddrqe" method="post" role="form" class="contactForm">
+            <form action="https://formspree.io/f/mvoddrqe" method="POST" role="form" class="contactForm">
             <%#= form_for @contact, html: { class: "contactForm" } do |f| %>
               <div class="form-row">
                 <div class="form-group col-lg-6">
@@ -1236,4 +1236,10 @@ Header
 
 </script>
 
-
+<script>
+  window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+</script>
