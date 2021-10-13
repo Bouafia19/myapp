@@ -1235,11 +1235,3 @@ Header
     marker.bindPopup('<%= image_tag ("img/next_challenge.jpg"), style: 'height:100px;width:100px;'%>').openPopup();
 
 </script>
-
-<script>
-  window.onbeforeunload = () => {
-  for(const form of document.getElementsByTagName('form')) {
-    form.reset();
-  }
-}
-</script>
